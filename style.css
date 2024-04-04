@@ -1,53 +1,56 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    background-color:grey;
-    font-size: 1.8em;
-    animation: animate 10s linear; infinitebackground: rgb(34,193,195);
-    background:linear-gradient(0deg,rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
-  }
-  
-  .text-container h1{
-    font-size: 80px;
-    color: rgba(225,225,225, .1);
-    background-image: url("https://s31.postimg.cc/yaze1agjv/abstract-background-canvas-249798.jpg");
-    background-repeat: repeat-x;
-    background-position: bottom;
-    background-size: cover;
-    -webkit-background-clip:text;
-    animation: animate 15s linear infinite;
-    text-align: center;
-    margin-top: 0%;
-    text-transform: uppercase;
-    font-weight: 900;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  background-color: grey;
+  font-size: 1.8em;
+  animation: animate 10s linear;
+  infinitebackground: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
 
-  .zone {
-    cursor: pointer;
-    color: #fff;
-    font-size: 1em;
-    border-radius: 4px;
-    border: 1px solid #bbb;
-    transition: all 0.3s linear;
-  }
+.text-container h1 {
+  font-size: 80px;
+  color: rgba(225, 225, 225, 0.1);
+  background-image: url("https://s31.postimg.cc/yaze1agjv/abstract-background-canvas-249798.jpg");
+  background-repeat: repeat-x;
+  background-position: bottom;
+  background-size: cover;
+  -webkit-background-clip: text;
+  animation: animate 25s linear infinite;
+  text-align: center;
+  margin-top: 0%;
+  text-transform: uppercase;
+  font-weight: 900;
+}
 
-  .main-nav {
-    display: flex;
-    list-style: none;
-    font-size: 0.7em;
-    margin: 0;
+.zone {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 0.7em;
+  margin: 0;
+}
+
+@keyframes animate {
+  0% {
+    background-position: left 0px top 10px;
   }
-  
-  
-  
-    @keyframes animate {
-      0%{
-        background-position: left 0px top 10px;
-      }
-      40%{
-        background-position: left 800px top 10px;
-    }
+  40% {
+    background-position: left 800px top 10px;
+  }
 }
 
 .pizza {
@@ -58,6 +61,124 @@ body {
   margin: 2rem auto 2rem auto;
   /*gap: 1rem;*/
 }
+body {
+  width:15em;
+  margin:5em auto;
+  font: 1.3em;
+  
+}
+
+.dropdown {
+  padding:1em 1em 0 1em;
+  background:turquoise;
+  display:block;
+  color:#222;
+}
+
+.nav-toggle {
+  -webkit-appearance: none;
+  background:white;
+  text-transform:uppercase;
+  font-size:1em;
+  padding:.5em;
+  border:none;
+  outline:none;
+  transition: all 0.2s;
+  cursor:pointer;
+}
+
+.nav-toggle:hover {
+  background:#222;
+  color:#fff;
+}
+
+.nav-toggle:focus, .menu a:focus {
+  outline:1px solid red;
+}
+
+.nav-toggle svg {
+  width:16px;   
+  height:16px;
+  fill:red;
+  vertical-align:top;
+  margin-right:.25em;
+}
+
+.menu {
+  list-style:none;
+  padding:0;
+  margin:1em 0 0 0;
+  transition: all 0.8s cubic-bezier(.15,.7,0,1);
+}
+
+.menu a {
+  display:block;
+  color:turquoise;
+  background:#222;
+  text-decoration:none;
+  padding:.5em .5em;
+  outline:none;
+  margin-bottom:.2em;
+  transition: all 0.2s;
+}
 
 
+.menu a:hover {
+  background:#fff;
+  color:#222;
+}
 
+.js .menu {
+		overflow: hidden;
+		max-height: 0;
+}
+
+.js .menu-active {
+	max-height:12em;
+  padding-bottom:1em;
+}
+
+.slideshow-container {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}

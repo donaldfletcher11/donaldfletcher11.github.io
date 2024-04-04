@@ -8,8 +8,17 @@
   </head>
   <body>
     <div class="pizza">
-      <nav class="zone">
-        <ul class="main-nav">
+      <nav class="dropdown">
+        <button class="nav-toggle">
+          <svg viewBox="0 0 16 16">
+            <path
+              d="M8.5 1c-4.142 0-7.5 3.358-7.5 7.5 0 4.143 3.358 7.5 7.5 7.5 4.143 0 7.5-3.357 7.5-7.5 0-4.142-3.357-7.5-7.5-7.5zm4 11h-8c-.276 0-.5-.225-.5-.5s.224-.5.5-.5h8c.275 0 .5.225.5.5s-.225.5-.5.5zm0-3h-8c-.276 0-.5-.225-.5-.5 0-.276.224-.5.5-.5h8c.275 0 .5.224.5.5 0 .275-.225.5-.5.5zm0-3h-8c-.276 0-.5-.224-.5-.5s.224-.5.5-.5h8c.275 0 .5.224.5.5s-.225.5-.5.5z"
+            />
+          </svg>
+          Menu
+        </button>
+
+        <ul class="menu">
           <li>
             <a href="#me" class="button green light">About Me</a>
             <a href="#skills" class="button white light">Skills</a>
@@ -82,7 +91,7 @@
             <p>
               <a href="http://google.com">https://www.google.com/</a>
               Virtual Pet
-              <img class="me" src="./img/me.jpg" />
+              <img class="me" src="./img/spring.png" />
               Java|JavaScript|Spring
             </p>
           </article>
@@ -90,13 +99,50 @@
             <p>
               <a href="http://google.com">https://www.google.com/</a>
               Professional Portfolio
-              <img class="me" src="./img/css.jpg" />
+              <img class="me" src="./img/java1.jpg" />
               HTML|CSS|JavaScript
             </p>
+            <button id="show-fact">Random Fun Fact about Me</button>
+            <p id="fun-fact"></p>
+            <section></section>
           </article>
-        </section>
-        <footer class="copyright">Copyright &copy; 2024</footer>
+            <div class="slideshow-container">
+              <div class="slide">
+                <img src="./img/4thID.jpg" alt="Image 1">
+                <div class="caption">My first Unit in the Army. Ft.Carson, Colorado</div>
+              </div>
+              
+              <div class="slide">
+                <img src="./img/raiders.jpg" alt="Image 2">
+                <div class="caption">My Favorite Hometown Team Las Vegas Raiders</div>
+              </div>
+            
+              <div class="slide">
+                <img src="./img/marvel.jpg" alt="Image 3">
+                <div class="caption">My Other Passion Is Marvel Movies</div>
+              </div>
+              <div class="slide">
+                <img src="./img/traveling.jpg" alt="Image 4">
+                <div class="caption">I love Traveling Exotic Places</div>
+              </div>
+              <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+              <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div></div>
+            <div></div>
+            <script src="script.js"></script>
+            <article></article>
+            <section></section>
+            <footer class="copyright">Copyright &copy; 2024</footer>
+            <div></div>
+            <div></div>
+            
+              
+
+            <body></body>
+            <html></html>
+          <article></article>
+        <section></section>
       </div>
-    </div>
+    <div></div>
   </body>
 </html>
